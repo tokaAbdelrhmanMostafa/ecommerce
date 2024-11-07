@@ -1,0 +1,22 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .card {
+    height: 500px; /* Adjust the height as needed */
+    margin: 5px;
+    padding: 15px; /* Add padding for better spacing */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  }
+  
+  img {
+    height: 250px;
+    object-fit: cover; 
+  }
+  a{
+    margin: 5px;
+  }
+  

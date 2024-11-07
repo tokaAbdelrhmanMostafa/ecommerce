@@ -1,0 +1,27 @@
+<div class="container">
+<div class="my-2 w-25">
+  <label for="mySelect">Choose an Categery</label>
+  <select id="mySelect" name="mySelect"  (change)="filter($event)">
+    <option value="">All</option>
+    <option value="{{cat}}" *ngFor="let cat of catogeries">{{cat}}</option>
+    
+  
+  </select>
+</div>
+    <div class="row">
+        <div class="col-md-3 md-12 " *ngFor="let pro of products" >
+          
+       
+        <div class="card" style="width: 18rem;">
+            <img src={{pro.image}} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{pro.title}}</h5>
+              
+              <a  class="btn btn-success">show details</a>
+              <a  class="btn btn-success" (click)="add()">Add to card</a>
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+<app-spiner></app-spiner>
